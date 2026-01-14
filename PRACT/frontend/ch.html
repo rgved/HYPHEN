@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gemini Investment Assistant</title>
+  <link rel="stylesheet" href="ch.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>FinFin</h1>
+    <p>Powered by Google Gemini</p>
+  </header>
+
+  <main class="chat-container">
+    <div id="chat-box">
+      <div class="message gemini">
+        👋 Hi! I’m your Gemini-powered investment assistant.
+        Ask me anything about investments or recommendations.
+      </div>
+    </div>
+
+    <!-- Floating input -->
+    <div class="input-floating">
+      <input 
+        type="text" 
+        id="user-input"
+        placeholder="Ask about SIPs, ETFs, risk, returns..."
+        autocomplete="off"
+      />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </main>
+
+  <script src="ch.js"></script>
+</body>
+</html>

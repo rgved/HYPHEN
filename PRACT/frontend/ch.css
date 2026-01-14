@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #343541;
+  color: white;
+  height: 100vh;
+}
+
+/* Header */
+.top-bar {
+  padding: 14px;
+  background-color: #202123;
+  border-bottom: 1px solid #444;
+  text-align: center;
+}
+
+/* Chat Area */
+.chat-container {
+  position: relative;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+#chat-box {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 120px; /* space for floating input */
+}
+
+/* Messages */
+.message {
+  max-width: 70%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* User (LEFT) */
+.message.user {
+  background-color: #4f46e5;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+/* Gemini (RIGHT) */
+.message.gemini {
+  background-color: #444654;
+  align-self: flex-end;
+  margin-right: auto;
+}
+
+/* Floating input */
+.input-floating {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  background-color: #202123;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.input-floating input {
+  flex: 1;
+  background-color: #40414f;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-floating button {
+  margin-left: 10px;
+  background-color: #19c37d;
+  border: none;
+  border-radius: 6px;
+  padding: 0 18px;
+  font-size: 18px;
+  cursor: pointer;
+}
